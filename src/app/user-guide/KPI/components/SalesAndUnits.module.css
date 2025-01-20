@@ -1,0 +1,105 @@
+.page {
+  min-height: 100vh;
+}
+
+.main{
+  padding: 20px;
+  font-family: Calibri, sans-serif;
+}
+.selectedText {
+  color: #4f2170;  /* The text color you want when an item is selected */
+}
+/* Sales and Units component styles */
+.container {
+  background-color: #ffffff; 
+  padding: 24px; /* Padding for the box */
+  color: #00000050; /* Text color with 50% opacity */
+  border: 1px solid transparent; 
+  border-radius: 20px;
+  transition: border-color 0.3s ease; 
+  margin-bottom: 24px; 
+  letter-spacing: -0.256px;
+  font-weight: 700;
+}
+
+.container:hover{
+  border-color: #4f2170;
+}
+
+.heading{
+  display: flex;
+  flex-direction: column;
+  color: #4f2170;
+  font-size: 20px;
+  font-weight: 700;
+  margin-top: 16px;
+  margin-bottom: 3%;
+}
+
+.container h2{
+  font-size: 16px;
+  font-weight: 700;
+  color: #00000050;
+  padding: 5px;
+  letter-spacing: -0.256px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.container h2:hover{
+  color: #4f2170;
+}
+
+
+.container p{
+  color: #454242d3;
+}
+
+
+/* List styling for different levels of nesting */
+.list {
+  padding-left: 0px;
+  list-style-type: none; /* Removes default list bullets */
+  color:#00000050;
+  letter-spacing: -0.256px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.list > li {
+  margin-top: 5px; /* Adds space after each item */
+}
+.list > li:hover{
+  color: #4f2170;
+}
+
+.list > li > .sublist {
+  margin-left: 10px; /* Indent second-level list */
+}
+
+.list > li > .sublist > li {
+  margin-left: 20px; /* Indent third-level list */
+}
+
+.detailsContainer {
+  margin-top: 20px;
+}
+
+/* Define a blinking animation */
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Apply the blinking animation to the <em> tag */
+.blinking {
+  animation: blink 1s infinite; /* Blink every 1 second */
+  font-size: 10px;
+}

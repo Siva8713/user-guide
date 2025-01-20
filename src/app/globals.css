@@ -2,20 +2,26 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@font-face {
+  font-family: 'Mondelez';
+  src: url('../../public/fonts/MDLZBITETYPE_Regular.otf');
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+@font-face {
+  font-family: 'Calibri';
+  src: url('../../public/fonts/calibri.ttf');
+  font-weight: 400;
 }
+@font-face {
+  font-family: 'Calibri';
+  src: url('../../public/fonts/calibrib.ttf');
+  font-weight: 700;
+}
+/* Body background and font setup */
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  @apply bg-gray-100;  /* Use Tailwind's grey-200 background color */
+  font-family: 'Calibri', sans-serif;
 }
+
+

@@ -1,18 +1,27 @@
-import type { Config } from "tailwindcss";
-
-export default {
+// tailwind.config.js
+module.exports = {
   content: [
-    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+    './pages/**/*.{js,ts,jsx,tsx}',
+    './components/**/*.{js,ts,jsx,tsx}',
+    './styles/**/*.{css,scss}',
   ],
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        'guardrails-red-bg': '#FF0000', // Example color
+        'guardrails-green-bg': '#00FF00',
+        'content-primary': '#171717', // Example color
       },
+      fontSize: {
+        'high-l': '2rem', 
+        'high-s': '1.5rem', // Example text size for 'text-high-l'
+      },
+      fontFamily: {
+        mondelez: ['Mondelez', 'sans-serif'],
+        calibri: ['Calibri', 'Arial', 'sans-serif'],
+      },
+      // Add any other custom configurations here
     },
   },
   plugins: [],
-} satisfies Config;
+};

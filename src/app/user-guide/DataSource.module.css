@@ -1,0 +1,136 @@
+
+/* Styling for the main container */
+.container {
+  margin: 0 auto;
+  padding: 20px; 
+  font-family: Calibri, sans-serif;
+  border-radius: 20px;
+  box-shadow: 0 0.4% 0.6% rgba(0, 0, 0, 0.1); /* Changed from 4px 6px to percentage */
+}
+
+/* Styling for the main heading */
+.container h1 {
+  display: flex;
+  flex-direction: column;
+  color: #4f2170;
+  font-family: Calibri, sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 3%;
+  margin-top: 16px; /* Changed from 20px to percentage */
+}
+
+/* Styling for individual sections */
+.section {
+  background-color: #ffffff; 
+  padding: 24px; /* Padding for the box */
+  color: #00000050; /* Text color with 50% opacity */
+  border: 1px solid transparent; 
+  border-radius: 20px;
+  transition: border-color 0.3s ease; 
+  margin-bottom: 24px; 
+  letter-spacing: -0.256px;
+  font-weight: 700;
+}
+.section:hover {
+  border-color: #4f2170; /* Border color on hover */
+}
+
+/* Styling for paragraph elements in sections */
+.section p {
+  color: #4f2170;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 700;
+  letter-spacing: -0.256px;
+}
+
+.em {
+  color:#ccc;
+}
+
+
+/* Flex container for the list and content */
+.flexContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 30px; 
+  justify-content: space-between;
+}
+
+.lis {
+  padding: 0;
+  list-style-type: disc;
+  margin-left: 5%; /* Changed from 20px to percentage */
+  font-size: 16px;
+}
+
+/* Styling for the unordered list */
+.list {
+  padding: 0;
+  list-style-type: disc;
+  margin-left: 5%; /* Changed from 20px to percentage */
+}
+
+/* Styling for list items */
+.list li {
+  font-size: 16px;
+  padding: 5px 0; /* Changed from 5px to percentage */
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+/* Hover effect on list items */
+.list li:hover {
+  background-color: #f1E6FC;
+  border-radius: 8px;
+  color:#4f2170;
+}
+
+/* Styling for the content display */
+.content {
+  margin-left: 20%;
+  padding: 20px; /* Changed from 20px to percentage */
+  border: 1px solid #ccc; /* Changed from 1px to percentage */
+  border-radius: 8px;
+  width: 50%;
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Changed from 2px 4px to percentage */
+  font-weight: 700;
+}
+
+/* Styling for the content title */
+.content h4 {
+  color: #4f2170;
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 15px; /* Changed from 15px to percentage */
+}
+
+
+
+/* Styling for the content list */
+.content ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.content li {
+  font-size: 16px;
+  padding: 5px 0; /* Changed from 5px to percentage */
+  color:#00000050;
+}
+
+/* Optional: Add media query for responsiveness */
+@media (max-width: 768px) {
+  .flexContainer {
+    flex-direction: column;
+    gap: 2%; /* Changed from 15px to percentage */
+  }
+
+  .content {
+    margin-left: 20%;
+    margin-top: 80px;
+    width: 100%;
+  }
+}

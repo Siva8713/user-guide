@@ -1,0 +1,76 @@
+.page {
+    min-height: 100vh;
+    padding: 20px;
+  }
+  
+  /* Sales and Units component styles */
+  .container {
+    background-color: #ffffff; 
+    padding: 24px; /* Padding for the box */
+    color: #00000050; /* Text color with 50% opacity */
+    border: 1px solid transparent; 
+    border-radius: 20px;
+    transition: border-color 0.3s ease; 
+    margin-bottom: 24px; 
+    letter-spacing: -0.256px;
+    font-weight: 700;
+  }
+  
+  .container:hover{
+    border-color: #4f2170;
+  }
+  
+  .heading{
+    display: flex;
+    flex-direction: column;
+    color: #4f2170;
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 16px;
+    margin-bottom: 3%;
+  }
+  
+  
+  
+  .container h2 {
+    color: #4f2170;
+    font-size: 16px;
+    font-weight: 700;
+  }
+  
+  .container p {
+    color:#00000050;
+    padding-left: 10px;
+  }
+  
+  /* KPI Section Styling */
+  .kpiSection {
+    margin-bottom: 30px;
+  }
+  
+  .kpiSection h1 {
+    font-size: 16px;
+    color: #4f2170;
+  }
+  
+  .kpiDescription h2 {
+    font-size: 16px;
+    color: #4f2170;
+    margin-top: 20px;
+  }
+  
+  .kpiDescription p {
+    font-size: 16px;
+    color:#00000050;
+    line-height: 1.5;
+  }
+  
+  /* List styling for different levels of nesting */
+  .list {
+    padding-left: 10px;
+    list-style-type: none; /* Removes default list bullets */
+    color:#00000050;
+  }
+  
+ 
+  

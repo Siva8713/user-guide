@@ -1,0 +1,48 @@
+.navBar {
+    width: 20%; /* Fixed width for NavBar */
+    background-color: #4f2170;
+    color: white;
+    height: 100vh; /* Full height for NavBar */
+    position: fixed;
+    top: 40;
+    left: 0;
+    /* padding-top: 20px; */
+    font-weight: 400;
+    font-size: 20px;
+    padding: 0 !important;
+    margin-top: -40px;
+    /* z-index: 10; */
+  }
+  .navBar h1{
+    padding-left: 10px;
+    padding-top: 20px;
+  }
+  
+  .navList {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .navList li {
+    padding: 10px;
+  }
+  
+  .navList li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 8px 15px;
+  }
+  
+  .navList li a:hover {
+    background-color: #F1E6FC;
+    color: #4f2170;
+    border-radius: 20px;
+  }
+  
+  .navList .active {
+    color: #4f2170;  /* Color when the link is active */
+    background-color: #F1E6FC;
+    font-weight: bold;  /* Optionally bold the active link */
+    border-radius: 20px;
+  }
